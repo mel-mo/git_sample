@@ -1,8 +1,6 @@
-def recursive_sum(data):
-    total = 0
-    for item in data:
-        if isinstance(item, list):
-            total += recursive_sum(item)
-        else:
-            total += item
-    return total
+data = [1,2,3]
+
+total = 0
+for i in range(len(data)):
+    total += data[i]
+print(total)
